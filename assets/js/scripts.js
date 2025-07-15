@@ -113,7 +113,7 @@ jQuery(function ($) {
                 //your configuration goes here
                 easing: 'easeOut',
                 delay: 3000,
-                barColor: '#6C8934',
+                barColor: '#CCCCCC',
                 trackColor: 'rgba(255,255,255,0.2)',
                 scaleColor: false,
                 lineWidth: 8,
@@ -226,7 +226,22 @@ jQuery(function ($) {
 
 });
 
+/* ===== Custom Cursor (dot + ring) ===== */
+if(!('ontouchstart' in window)){  // 모바일 제외
+  const dot  = document.querySelector('.cursor-dot');
+  const ring = document.querySelector('.cursor-ring');
 
+  window.addEventListener('mousemove', e=>{
+    gsap.to(dot ,{x:e.clientX, y:e.clientY, duration:.12, ease:'power3.out', opacity:1});
+    gsap.to(ring,{x:e.clientX, y:e.clientY, duration:.25, ease:'power3.out', opacity:1});
+  });
+
+  // 링크·버튼 위에서 링 확대
+  document.querySelectorAll('a,button,.tilt').forEach(el=>{
+    el.addEventListener('mouseenter', ()=>ring.style.transform='scale(1.8)');
+    el.addEventListener('mouseleave', ()=>ring.style.transform='scale(1)');
+  });
+}
 
 
 
