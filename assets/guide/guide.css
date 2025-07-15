@@ -36,15 +36,15 @@ img{
 .btn_1 li a {
 	display: inline-block;
 	padding: 10px 20px;
-	border-radius: 10px;
-	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+	border-radius: 1000px;
+	/* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); */
 	background: #fff;
-	color: #6a5445;
-	border: 2px solid #6a5445;
+	color: #6C8934;
+	border: 1px solid #6C8934;
 	font-weight: bold;
 }
 
 .btn_1 li a:hover{
-	background-color: #6a5445;
+	background-color: #6C8934;
 	color: #fff;
 }
