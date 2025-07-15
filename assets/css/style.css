@@ -305,7 +305,7 @@ ul.list-check li::before {
     position: relative;
 }
 
-.section-title::after {
+/* .section-title::after {
     content: "";
     background: url(../images/point.png) no-repeat 0 0;
     height: 49px;
@@ -316,7 +316,7 @@ ul.list-check li::before {
     bottom: 60px;
     margin: 0 auto;
 
-}
+} */
 
 
 
@@ -733,17 +733,10 @@ Icon for all respective meta
     min-height: 100px;
 }
 
-.portfolio-bg {
-    background: #fff;
-    /* padding: 5px; */
-    /* border: 1px solid #eee; */
-    /* border-bottom: 3px double #eee; */
-}
-
-
 .portfolio {
     position: relative;
     overflow: hidden;
+    border-radius: 20px;
 }
 #portfolio{
     background-color: #ffff;
