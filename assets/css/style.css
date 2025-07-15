@@ -41,6 +41,9 @@ body,
 html {
     overflow-x: hidden;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 /* Link style
 ---------------------------------------------------------*/
