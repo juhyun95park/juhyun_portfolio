@@ -648,6 +648,9 @@ border-radius: 100px;
 .myphoto img {
     position: relative;
     border-radius: 1000px;
+    max-width: 380px;
+    display: block;
+    margin: auto;
 }
 
 .biography ul {
